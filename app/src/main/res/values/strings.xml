@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ЕЭТК</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_text_main">Главная</string>
+    <string name="tab_text_profile">Профиль</string>
+    <string name="tab_text_info">Информация</string>
+</resources>

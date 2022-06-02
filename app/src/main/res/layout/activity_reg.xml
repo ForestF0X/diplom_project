@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".startactivities.RegActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background_1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Фамилия"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/surnameText"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:hint="Иванов"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_text"
+                android:ems="10"
+                android:fontFamily="@font/nunito_regular"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Имя"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:hint="Иван"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_text"
+                android:ems="10"
+                android:fontFamily="@font/nunito_regular"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Логин"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/loginText"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_text"
+                android:ems="10"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Login"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="E-mail"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/emailText"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_text"
+                android:ems="10"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Пароль"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/passText"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:background="@drawable/border_text"
+                android:ems="10"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/toLoginBtn"
+                android:layout_width="112dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/border_button"
+                android:text="Войти"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/red_light" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/regBtn"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_red"
+                android:text="Регистрация"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

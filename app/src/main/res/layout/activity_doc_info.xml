@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".documentsscreens.DocInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Вам необходимо загрузить следующий список документов:\n1. Документ, удостоверяющий личность, гражданство;\n2. Скан документа государственного образца об образовании;\n3. Медицинскую справку 086 формы;\n4. Копию  приписного удостоверения (для мужчин);\n5. Договор о целевом обучении (при наличии)\n6. Результаты индивидуальных достижений (при наличии)\n\nЗаявление необходимо заполнить в заданном заранее формате, переход к заполнению осуществляется по кнопке ниже."
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/toDocBtn"
+        android:layout_width="242dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border_button"
+        android:text="Начать заполнение"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
